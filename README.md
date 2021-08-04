@@ -1,21 +1,21 @@
 # branch-cheat-sheet
 
-local branch= branch only on your computer
-remote branch= branch on github
+- local branch= branch only on your computer
+- remote branch= branch on github
 
-### Branching and Merging
+## Branching and Merging
 
-git branch                                      # show list of all branches (* is active)
-git checkout -b branch-name                     # create a new branch named "branch-name" and checkout
+- git branch                                      # show list of all branches (* is active)
+- git checkout -b branch-name                     # create a new branch named "branch-name" and checkout
 
-git checkout master                             # go back to master branch
+- git checkout master                             # go back to master branch
 git checkout branch-name                        # go back to branch-name
 git merge branch-name                           # merge changesets from branch-name
 git pull . branch-name                          # merge changesets from branch-name
 git branch -m branch-name new-name              # rename branch
 git branch -m new-name                          # rename current branch
 
-### Tracking and Submitting Changes
+## Tracking and Submitting Changes
 git add .                                       # tracks changes of current directory
 git commit -m "comment"                         # captures changes that need to be committed to the remote branch with a message
 git commit -am "comment                         # (same as git add . and git commit -m "comment" but in one command)
