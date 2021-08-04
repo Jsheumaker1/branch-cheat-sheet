@@ -5,8 +5,8 @@
 
 ## Branching and Merging
 
-- git branch                                      # show list of all branches (* is active)
-- git checkout -b branch-name                     # create a new branch named "branch-name" and checkout
+$ git branch                                     - show list of all branches (* is active)
+$ git checkout -b branch-name                     # create a new branch named "branch-name" and checkout
 
 - git checkout master                             # go back to master branch
 git checkout branch-name                        # go back to branch-name
