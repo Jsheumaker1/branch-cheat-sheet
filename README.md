@@ -7,24 +7,24 @@
 ## Branching and Merging
 
 #### $ git branch
-  -- shows list of all branches (* is active)
+  -- shows list of all local branches (* is active)
 
-#### $ git checkout -b branch-name
-  -- create a new branch named "branch-name" and checkout
+#### $ git checkout -b local_branch
+  -- create a new local branch named "local_branch" and checkout
 
 #### $ git checkout master                            
   -- go back to master branch
 
-#### $ git checkout branch-name                       
-  -- go back to branch-name
+#### $ git checkout local_branch                       
+  -- go back to local_branch
  
-#### $ git merge branch-name                           
-  -- merge changesets from branch-name
+#### $ git merge local_branch                           
+  -- merge changesets from local_branch
 
-#### $ git pull . branch-name                          
-  -- merge changesets from branch-name
+#### $ git pull . local_branch                          
+  -- merge changesets local_branch
 
-#### $ git branch -m branch-name new-name             
+#### $ git branch -m local_branch new-name             
   -- rename branch
 
 #### $ git branch -m new-name                          
@@ -44,18 +44,21 @@
 #### $ git push                                                                  
   -- pushes changed to the remote branch
 
-#### $ git push --set-upstream origin branch-name                                
-  -- if local branch doesn't have an upstream remote branch then this will create and upstream remote branch and push the changes
+#### $ git push --set-upstream origin local_branch                                
+  -- if local branch doesn't have an upstream remote branch then this will create an upstream remote branch and push the changes
 
 ## Delete Project
 
-#### $ git branch -d branch-name  	                                              
+#### $ git branch -d local_branch  	                                              
   -- deletes local branch
 
-#### $ git push origin :branch-name	                                            
+#### git push origin --delete remote_branch
   -- deletes remote branch
 
-#### $ git remote prune branch-name	                                            
+#### $ git push origin :remote_branch	                                            
+  -- push a delete signal to the remote origin repository that triggers a delete of the remote branch
+
+#### $ git remote prune local_branch 	                                            
   -- update local/remote sync
 
 ## Merging Upstream
@@ -72,11 +75,8 @@
 #### $ git fetch upstream 								                                        
   -- Get original repo
 
-#### $ git checkout development						                                      
-  -- Switch to main branch in local fork
-
 #### $ git merge upstream/development					                                  
   -- Merge original with fork
 
-#### $ git diff --name-only main branch-name		                                  
+#### $ git diff --name-only main local_branch 		                                  
   -- Lists names of files with differences from the main remote branch and local branch
