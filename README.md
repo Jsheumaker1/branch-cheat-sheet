@@ -47,6 +47,9 @@
 #### $ git push --set-upstream origin local_branch                                
   -- if local branch doesn't have an upstream remote branch then this will create an upstream remote branch and push the changes
 
+#### $ git merge main
+  -- if in your local branch this will update your branch to whats on the main remote branch
+
 ## Delete Project
 
 #### $ git branch -d local_branch  	                                              
