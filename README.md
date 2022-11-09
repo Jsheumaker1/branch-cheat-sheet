@@ -6,14 +6,20 @@
 
 ## Branching and Merging
 
+#### $ git checkout master                            
+  -- go back to master branch
+
+#### $ git pull
+  -- update branch
+  
+#### $  git status
+  -- shows staus of branch
+  
 #### $ git branch
   -- shows list of all local branches (* is active)
 
 #### $ git checkout -b local_branch
   -- create a new local branch named "local_branch" and checkout
-
-#### $ git checkout master                            
-  -- go back to master branch
 
 #### $ git checkout local_branch                       
   -- go back to local_branch
