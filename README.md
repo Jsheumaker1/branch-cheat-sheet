@@ -89,3 +89,23 @@
 
 #### $ git diff --name-only main local_branch 		                                  
   -- Lists names of files with differences from the main remote branch and local branch
+  
+  
+##  Stash
+
+#### $ git stash push -m "mat-icon"
+  --
+  
+#### $ git stash list
+  -- 
+  
+#### $ git stash apply
+  
+  
+#### $ git stash pop
+  -- applys and removes from stash
+
+## Other
+  
+#### $ git rebase
+  --Writes other other commits onto your branch
